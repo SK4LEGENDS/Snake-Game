@@ -68,7 +68,7 @@ When the snake’s head reaches the food, the snake grows longer, and the score 
 
 Here’s a quick glimpse of the gameplay:  
 
-![Snake Game Screenshot](pictures/demo.png)
+![Snake Game Screenshot](picture/demo.png)
 
 ---
 
