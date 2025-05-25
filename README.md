@@ -1,79 +1,81 @@
-# Notebook Tic-Tac-Toe
+# 🐍 Snake Game – Classic Fun with a Retro Red Twist
 
-Welcome to **Notebook Tic-Tac-Toe**, a web-based version of the classic Tic-Tac-Toe game designed to bring back the nostalgic memories of school days. This project recreates the feel of playing on a notebook page, complete with lined paper backgrounds and handwritten-style fonts — just like doodling in your school notebook during class!
+**Snake Game** is a timeless arcade classic reborn on the web!  
+Control your snake, gobble up food, grow longer, and dodge the walls and your own tail.  
+Simple to play, addictive to master — this one’s a fun little challenge wrapped in bold black and red vibes! 🔴🖤
 
-## Overview
+---
 
-Tic-Tac-Toe is a simple two-player game played on a 3x3 grid. Players alternate placing their marks ('X' and 'O') to try and get three in a row—horizontally, vertically, or diagonally. If the grid fills with no winner, the game ends in a draw.
+## 🎮 Gameplay Overview
 
-## Key Features
+### 🎯 Objective  
+Guide the snake to eat food pieces to grow as long as possible without crashing into walls or itself.
 
-- **Classic Tic-Tac-Toe gameplay:** Two players take turns placing X’s and O’s on a 3x3 grid aiming to align three in a row.  
-- **Custom Player Names:** Players can enter their own names before starting the game to personalize the experience.  
-- **Score Tracking:** Keeps a running score for both players, updating after every win.  
-- **Responsive Board:** The game board dynamically resets after each round to continue playing.  
-- **Stylish Notebook Theme:** Background mimics lined notebook paper, with playful handwritten fonts to enhance nostalgia.  
-- **Clean UI:** Clear buttons for starting and resetting the game.  
-- **Input Validation:** Disallows placing marks on already occupied cells.  
-- **Win and Draw Detection:** Accurately detects wins and ties, with alert messages to notify players.  
-- **Simple and Lightweight:** Built using plain HTML, CSS, and vanilla JavaScript for easy understanding and customization.
+### 🐍 How to Play
 
-## User Interface & Design
+- ▶️ Use the arrow keys to steer the snake:  
+  ⬆️ Up &nbsp;&nbsp;&nbsp;&nbsp; ⬇️ Down &nbsp;&nbsp;&nbsp;&nbsp; ⬅️ Left &nbsp;&nbsp;&nbsp;&nbsp; ➡️ Right  
+- 🍎 Eat the red food to grow longer and increase your score.  
+- ⛔ Avoid hitting the black canvas border or the snake’s own body.  
+- ⏸️ Use the Pause button or press Spacebar to pause/resume.  
+- 🔄 Use the Start button to reset and begin a new game.
 
-- The background uses a repeating linear gradient that resembles lined paper, giving a real notebook feel.  
-- Font choice is ‘Gloria Hallelujah’, a handwritten cursive font from Google Fonts, to mimic writing in a notebook.  
-- The game container has a dashed border with a red accent on the left, resembling a notebook margin.  
-- Input boxes and buttons are styled with dashed borders and subtle hover effects to keep a casual school vibe.  
-- The game board cells have a simple white background with dashed borders and change color based on the player mark (blue for X and red for O).  
-- The scoreboard updates dynamically and uses large, readable fonts to show the scores clearly.
+---
 
-## How It Works
+## ✨ Features
 
-### Game Setup
+- 🖤 Stylish black canvas with bold red border and highlights  
+- 🕹️ Responsive controls using keyboard arrows  
+- 🍎 Random food spawning on free spots  
+- 🔢 Real-time score display  
+- ⏸️ Pause and resume functionality (button + spacebar)  
+- 🚦 Start button to reset the game anytime  
+- 👾 Smooth snake movement and collision detection  
+- 💻 Clean and well-structured HTML, CSS, and JavaScript code
 
-- Players enter their names and press the Start Game button.  
-- The game board appears with an empty 3x3 grid.  
-- The scoreboard shows the player names and their current scores (starting at zero).
+---
 
-### Gameplay
+## 🛠️ Tech Stack
 
-- Players alternate turns, clicking on empty cells to place their mark (X or O).  
-- The game logic prevents clicking on already occupied cells.  
-- After each move, the game checks if there is a winner or if the game ended in a draw.  
-- If a player wins, an alert announces the winner and the scoreboard updates.  
-- If the game is a draw (all cells filled with no winner), an alert announces the draw.  
-- The board resets automatically after a win or draw, keeping the scores intact.
+| Technology     | Role                                     |
+|----------------|------------------------------------------|
+| `HTML5 Canvas` | Game rendering and drawing                |
+| `CSS3`         | Styling, layout, and UI controls          |
+| `Vanilla JS`   | Game logic, input handling, animation loop|
 
-### Resetting the Game
+---
 
-- The Reset Game button resets scores and clears the board for a fresh start.  
-- Player names remain visible but the game needs to be started again.
+## ⚙️ How It Works
 
-## Technology Stack
+### 🐍 Snake Representation  
+The snake is an array of coordinates (x, y) representing its body segments.  
+On each game tick, the snake moves by adding a new head in the current direction and removing the tail unless it eats food.
 
-- **HTML5:** Structure of the page and game elements.  
-- **CSS3:** Styling for notebook theme, layout, and interactive effects.  
-- **Vanilla JavaScript:** Core game logic, event handling, game state management, and dynamic UI updates.  
-- **Google Fonts:** ‘Gloria Hallelujah’ for that handwritten feel.
+### 🍎 Food Mechanics  
+Food appears randomly on the canvas grid, avoiding the snake’s current position.  
+When the snake’s head reaches the food, the snake grows longer, and the score increments.
 
-## Why This Project?
+### 🕹️ Controls and Game Flow  
+- Arrow keys change the snake’s direction, but no 180° turns allowed.  
+- The game updates every fixed interval (game loop).  
+- If the snake collides with itself or the canvas border, the game ends.  
+- The pause button or spacebar toggles pause/resume.  
+- The start button resets the game state.
 
-This project is not just about coding a Tic-Tac-Toe game. It’s about combining simple, familiar gameplay with a nostalgic and playful design that connects users to memories of school days. The handwritten font and notebook paper background are deliberate design choices to create a cozy, relatable atmosphere.
+---
 
-It’s perfect for:
+## 📸 Demo
 
-- Beginners learning how to build interactive web apps.  
-- Anyone wanting a fun, easy-to-understand game.  
-- People who love nostalgic, school-themed projects.
+Here’s a quick glimpse of the gameplay:  
 
-## Game Screenshots
-![Snake Game](picture/home)
+![Snake Game Screenshot](pictures/demo.png)
 
+---
 
-## Conclusion
+## 🚀 How to Run Locally
 
-Thank you for checking out **Notebook Tic-Tac-Toe**! I hope this project sparks a little nostalgia and inspires you to create your own playful, meaningful web apps. Whether you’re here to learn, to play, or to customize, enjoy every moment of the journey. Keep coding, keep dreaming, and most importantly—keep having fun!
+1. Clone this repository:
 
-Happy gaming and happy coding! 🎉✏️📓
-
-
+   ```bash
+   git clone https://github.com/your-username/snake-game.git
+   cd snake-game
